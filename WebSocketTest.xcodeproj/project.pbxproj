@@ -18,6 +18,8 @@
 		A35F16A51855E981008A059B /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A35F16841855E981008A059B /* Cocoa.framework */; };
 		A35F16AD1855E981008A059B /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = A35F16AB1855E981008A059B /* InfoPlist.strings */; };
 		A35F16AF1855E981008A059B /* WebSocketTestTests.m in Sources */ = {isa = PBXBuildFile; fileRef = A35F16AE1855E981008A059B /* WebSocketTestTests.m */; };
+		A35F16C01855FA4E008A059B /* GCDAsyncSocket.m in Sources */ = {isa = PBXBuildFile; fileRef = A35F16BF1855FA4E008A059B /* GCDAsyncSocket.m */; };
+		A35F16C21855FBDF008A059B /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A35F16C11855FBDF008A059B /* Security.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -50,6 +52,9 @@
 		A35F16AA1855E981008A059B /* WebSocketTestTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "WebSocketTestTests-Info.plist"; sourceTree = "<group>"; };
 		A35F16AC1855E981008A059B /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		A35F16AE1855E981008A059B /* WebSocketTestTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WebSocketTestTests.m; sourceTree = "<group>"; };
+		A35F16BE1855FA4E008A059B /* GCDAsyncSocket.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GCDAsyncSocket.h; sourceTree = "<group>"; };
+		A35F16BF1855FA4E008A059B /* GCDAsyncSocket.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GCDAsyncSocket.m; sourceTree = "<group>"; };
+		A35F16C11855FBDF008A059B /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,6 +62,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A35F16C21855FBDF008A059B /* Security.framework in Frameworks */,
 				A35F16851855E981008A059B /* Cocoa.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -95,6 +101,7 @@
 		A35F16831855E981008A059B /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				A35F16C11855FBDF008A059B /* Security.framework */,
 				A35F16841855E981008A059B /* Cocoa.framework */,
 				A35F16A31855E981008A059B /* XCTest.framework */,
 				A35F16861855E981008A059B /* Other Frameworks */,
@@ -115,6 +122,8 @@
 		A35F168A1855E981008A059B /* WebSocketTest */ = {
 			isa = PBXGroup;
 			children = (
+				A35F16BE1855FA4E008A059B /* GCDAsyncSocket.h */,
+				A35F16BF1855FA4E008A059B /* GCDAsyncSocket.m */,
 				A35F16961855E981008A059B /* AppDelegate.h */,
 				A35F16971855E981008A059B /* AppDelegate.m */,
 				A35F16991855E981008A059B /* MainMenu.xib */,
@@ -252,6 +261,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A35F16C01855FA4E008A059B /* GCDAsyncSocket.m in Sources */,
 				A35F16981855E981008A059B /* AppDelegate.m in Sources */,
 				A35F16911855E981008A059B /* main.m in Sources */,
 			);
@@ -387,6 +397,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "WebSocketTest/WebSocketTest-Prefix.pch";
 				INFOPLIST_FILE = "WebSocketTest/WebSocketTest-Info.plist";
+				PRODUCT_BUNDLE_IDENTIFIER = com.avatsaev.SocketTest;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
@@ -400,6 +411,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "WebSocketTest/WebSocketTest-Prefix.pch";
 				INFOPLIST_FILE = "WebSocketTest/WebSocketTest-Info.plist";
+				PRODUCT_BUNDLE_IDENTIFIER = com.avatsaev.SocketTest;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
@@ -464,6 +476,7 @@
 				A35F16B41855E981008A059B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		A35F16B51855E981008A059B /* Build configuration list for PBXNativeTarget "WebSocketTestTests" */ = {
 			isa = XCConfigurationList;
@@ -472,6 +485,7 @@
 				A35F16B71855E981008A059B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
